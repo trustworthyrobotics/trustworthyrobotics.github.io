@@ -496,7 +496,7 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"><br>**Safely Integrating Perception, Planning, and Control for Robust Learning-Based Robot Autonomy** <br> 
 		<em>**Glen Chou\***</em> <br> 
 		Robotics: Science and Systems, Pioneers Workshop, June 2022. <br>
-                \[[PDF](https://glenchou.github.io/papers/Chou23c.pdf)\] [<a href="javascript:toggleInfo(&#39;Chou22c&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                \[[PDF](https://glenchou.github.io/papers/Chou22c.pdf)\] [<a href="javascript:toggleInfo(&#39;Chou22c&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
 <tr id="bib_Chou22c" class="bibtex noshow">
 <td colspan="3"><b>BibTeX</b>:

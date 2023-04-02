@@ -1,0 +1,17 @@
+# Site settings
+title: Glen Chou
+email: gchou [at] mit [dot] edu
+description: > # this means to ignore newlines until "baseurl:"
+# baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://glenchou.github.io" # the base hostname & protocol for your site
+# github_username:  gchou95
+gscholar_username: 90whi3wAAAAJ&hl
+# dblp_username: dblp
+rgate_username: Glen_Chou
+
+# Build settings
+markdown: kramdown
+
+# Other options
+job.title: "Postdoc"
+excerpt_separator: "<!--more-->"

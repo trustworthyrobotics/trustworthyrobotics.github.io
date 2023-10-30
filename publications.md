@@ -215,6 +215,42 @@ function toggleInfo(articleid,info) {
 <tbody>
 
 
+<tr id="Chou23a">
+	<td markdown="span"><br><img src="../images/cdc_23_01.png" onmouseover="this.src='../images/cdc_23_02.gif'" onmouseout="this.src='../images/cdc_23_01.png'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Synthesizing Stable Reduced-Order Visuomotor Policies for Nonlinear Systems via Sums-of-Squares Optimization** <br> 
+		<em>**Glen Chou**, Russ Tedrake</em> <br> 
+		Proceedings of the 62nd IEEE Conference on Decision and Control (CDC), December 2023. <br>
+		[<a href="javascript:toggleInfo(&#39;Chou23a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Chou23a&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2304.12405)\] \[<a href="https://arxiv.org/pdf/2304.12405.pdf">PDF</a>\] [<a href="javascript:toggleInfo(&#39;Chou23a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+</tr>
+<tr id="abs_Chou23a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: We present a method for synthesizing dynamic, reduced-order output-feedback polynomial control policies for control-affine nonlinear systems which guarantees runtime stability to a goal state, when using visual observations and a learned perception module in the feedback control loop. We leverage Lyapunov analysis to formulate the problem of synthesizing such policies. This problem is nonconvex in the policy parameters and the Lyapunov function that is used to prove the stability of the policy. To solve this problem approximately, we propose two approaches: the first solves a sequence of sum-of-squares optimization problems to iteratively improve a policy which is provably-stable by construction, while the second directly performs gradient-based optimization on the parameters of the polynomial policy, and its closed-loop stability is verified a posteriori. We extend our approach to provide stability guarantees in the presence of observation noise, which realistically arises due to errors in the learned perception module. We evaluate our approach on several underactuated nonlinear systems, including pendula and quadrotors, showing that our guarantees translate to empirical stability when controlling these systems from images, while baseline approaches can fail to reliably stabilize the system. </div></td>
+  </tr>
+<tr id="bib_Chou23a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Chou-CDC-23,<br>   Author = "Glen Chou and Russ Tedrake",
+   journal = {Proceedings of the 62nd IEEE Conference on Decision and Control (CDC)},<br>   Title = "Synthesizing Stable Reduced-Order Visuomotor Policies for Nonlinear Systems via Sums-of-Squares Optimization",<br>   year = {2023}<br>}</pre></td>
+</tr>
+
+<tr id="Suh23">
+	<td markdown="span"><br><img src="../images/corl_23_01.png" onmouseover="this.src='../images/corl_23_02.gif'" onmouseout="this.src='../images/corl_23_01.png'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Fighting Uncertainty with Gradients: Offline Reinforcement Learning via Diffusion Score Matching** <br> 
+		<em>H.J. Terry Suh, **Glen Chou\***, Hongkai Dai\*, Lujie Yang\*, Abhishek Gupta, Russ Tedrake</em> <br> 
+		7th Conference on Robot Learning (CoRL), November 2023. <br>
+		[<a href="javascript:toggleInfo(&#39;Suh23&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Suh23&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2306.14079)\] \[<a href="https://arxiv.org/pdf/2306.14079.pdf">PDF</a>\] \[<a href="https://youtu.be/rNpHt3rNkJo">Supplementary Video</a>\] \[<a href="https://github.com/hjsuh94/score_po">Code</a>\] \[<a href="https://sites.google.com/view/score-guided-planning/home">Website</a>\] [<a href="javascript:toggleInfo(&#39;Suh23&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+</tr>
+<tr id="abs_Suh23" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Offline optimization paradigms such as offline Reinforcement Learning (RL) or Imitation Learning (IL) allow policy search algorithms to make use of offline data, but require careful incorporation of uncertainty in order to circumvent the challenges of distribution shift. Gradient-based policy search methods are a promising direction due to their effectiveness in high dimensions; however, we require a more careful consideration of how these methods interplay with uncertainty estimation. We claim that in order for an uncertainty metric to be amenable for gradient-based optimization, it must be (i) stably convergent to data when uncertainty is minimized with gradients, and (ii) not prone to underestimation of true uncertainty. We investigate smoothed distance to data as a metric, and show that it not only stably converges to data, but also allows us to analyze model bias with Lipschitz constants. Moreover, we establish an equivalence between smoothed distance to data and data likelihood, which allows us to use score-matching techniques to learn gradients of distance to data. Importantly, we show that offline model-based policy search problems that maximize data likelihood do not require values of likelihood; but rather only the gradient of the log likelihood (the score function). Using this insight, we propose Score-Guided Planning (SGP), a planning algorithm for offline RL that utilizes score-matching to enable first-order planning in high-dimensional problems, where zeroth-order methods were unable to scale, and ensembles were unable to overcome local minima. </div></td>
+  </tr>
+<tr id="bib_Suh23" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Suh-CoRL-23,<br>   Author = "HJ Terry Suh, Glen Chou, Hongkai Dai, Lujie Yang, Abhishek Gupta, and Russ Tedrake",
+   journal = {7th Conference on Robot Learning (CoRL)},<br>   Title = "Fighting Uncertainty with Gradients: Offline Reinforcement Learning via Diffusion Score Matching",<br>   year = {2023}<br>}</pre></td>
+</tr>
+
 <tr id="Knuth23b">
 	<td markdown="span"><br><img src="../images/icra_23b_01.png" onmouseover="this.src='../images/icra_23b_02.gif'" onmouseout="this.src='../images/icra_23b_01.png'" />   </td>
 	<td markdown="span"></td>

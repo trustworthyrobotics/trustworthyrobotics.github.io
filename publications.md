@@ -222,7 +222,7 @@ function toggleInfo(articleid,info) {
 		<em>**Glen Chou**, Russ Tedrake</em> <br> 
 		Proceedings of the 62nd IEEE Conference on Decision and Control (CDC), December 2023. <br>
 		[<a href="javascript:toggleInfo(&#39;Chou23a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Chou23a&#39;); ">Abstract</a>]
-                \[[arXiv](https://arxiv.org/abs/2304.12405)\] \[<a href="https://arxiv.org/pdf/2304.12405.pdf">PDF</a>\] [<a href="javascript:toggleInfo(&#39;Chou23a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                \[[arXiv](https://arxiv.org/abs/2304.12405)\] \[<a href="https://glenchou.github.io/papers/Chou23a.pdf">PDF</a>\] [<a href="javascript:toggleInfo(&#39;Chou23a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
 <tr id="abs_Chou23a" class="abstract noshow">
     <td colspan="3"><div align="justify"> <b>Abstract</b>: We present a method for synthesizing dynamic, reduced-order output-feedback polynomial control policies for control-affine nonlinear systems which guarantees runtime stability to a goal state, when using visual observations and a learned perception module in the feedback control loop. We leverage Lyapunov analysis to formulate the problem of synthesizing such policies. This problem is nonconvex in the policy parameters and the Lyapunov function that is used to prove the stability of the policy. To solve this problem approximately, we propose two approaches: the first solves a sequence of sum-of-squares optimization problems to iteratively improve a policy which is provably-stable by construction, while the second directly performs gradient-based optimization on the parameters of the polynomial policy, and its closed-loop stability is verified a posteriori. We extend our approach to provide stability guarantees in the presence of observation noise, which realistically arises due to errors in the learned perception module. We evaluate our approach on several underactuated nonlinear systems, including pendula and quadrotors, showing that our guarantees translate to empirical stability when controlling these systems from images, while baseline approaches can fail to reliably stabilize the system. </div></td>
@@ -512,7 +512,7 @@ function toggleInfo(articleid,info) {
 
 <br>
 
-## Workshop Papers/Technical Reports
+## Refereed Workshop Papers/Technical Reports
 
 <hr>
 

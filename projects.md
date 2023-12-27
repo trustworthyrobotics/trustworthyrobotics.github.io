@@ -57,6 +57,7 @@ function toggleInfo(articleid,info) {
     table.areas {
         display: table;
         text-align: center;
+        margin: 0 auto;
     }
     table.areas tr {
         display: table-cell;
@@ -87,8 +88,16 @@ function toggleInfo(articleid,info) {
         height: 5em;
         vertical-align: top;
         padding-top: 0;
-        padding-bottom: 1em;
+        padding-bottom: 1vh;
         line-height: 1;
+    }
+    @media screen and (max-width: 1024px) {
+        table.areas tr {
+            display: block;
+            width: 100%; /* Set the width to 100% for smaller screens */
+            box-sizing: border-box;
+            margin-bottom: 10px; /* Adjust as needed */
+        }
     }
 </style>
 

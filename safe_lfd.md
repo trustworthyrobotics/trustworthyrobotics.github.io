@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Safely Learning Task Specifications from Humans
-permalink: /projects/constraints
+title: Safe and Robust Human-Robot Interaction
+permalink: /projects/safe_lfd
 ---
 
 <script type="text/javascript">

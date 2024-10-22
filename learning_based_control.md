@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Reliable Planning and Control with Learned Models
-permalink: /projects/trusted_domain
+title: Trustworthy Learning-Based Planning and Control
+permalink: /projects/learning_based_control
 ---
 
 <script type="text/javascript">

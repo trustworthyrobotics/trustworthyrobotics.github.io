@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Fundamental Model-Based Tools for Verifiable Control
-permalink: /projects/output_feedback
+title: Formally-Verified Model-Based Control Synthesis
+permalink: /projects/verified_control
 ---
 
 <script type="text/javascript">

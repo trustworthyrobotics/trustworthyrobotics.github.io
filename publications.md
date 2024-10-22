@@ -60,9 +60,9 @@ function toggleInfo(articleid,info) {
 
 <table class="table">
 <colgroup>
-	<col width="30%" />
+	<col width="25%" />
 	<col width="2%" />
-	<col width="68%" />
+	<col width="73%" />
 </colgroup>
 <tbody>
 
@@ -208,12 +208,30 @@ function toggleInfo(articleid,info) {
 
 <table class="table">
 <colgroup>
-	<col width="30%" />
+	<col width="27%" />
 	<col width="2%" />
-	<col width="68%" />
+	<col width="71%" />
 </colgroup>
 <tbody>
 
+
+<tr id="Lin24">
+	<td markdown="span"><br><img src="../images/icra_24_01.png" onmouseover="this.src='../images/icra_24_02.png'" onmouseout="this.src='../images/icra_24_01.png'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Improving Out-of-Distribution Generalization of Learned Dynamics by Learning Pseudometrics and Constraint Manifolds** <br> 
+		<em>Yating Lin, **Glen Chou**, Dmitry Berenson</em> <br> 
+		Proceedings of the 61st IEEE International Conference on Robotics and Automation (ICRA), May 2024. <br>
+		[<a href="javascript:toggleInfo(&#39;Lin24&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Lin24&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2403.12245)\] \[<a href="https://arxiv.org/pdf/2403.12245">PDF</a>\] [<a href="javascript:toggleInfo(&#39;Lin24&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+</tr>
+<tr id="abs_Lin24" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: We propose a method for improving the prediction accuracy of learned robot dynamics models on out-of-distribution (OOD) states. We achieve this by leveraging two key sources of structure often present in robot dynamics: 1) sparsity, i.e., some components of the state may not affect the dynamics, and 2) physical limits on the set of possible motions, in the form of nonholonomic constraints. Crucially, we do not assume this structure is known a priori, and instead learn it from data. We use contrastive learning to obtain a distance pseudometric that uncovers the sparsity pattern in the dynamics, and use it to reduce the input space when learning the dynamics. We then learn the unknown constraint manifold by approximating the normal space of possible motions from the data, which we use to train a Gaussian process (GP) representation of the constraint manifold. We evaluate our approach on a physical differential-drive robot and a simulated quadrotor, showing improved prediction accuracy on OOD data relative to baselines. </div></td>
+  </tr>
+<tr id="bib_Lin24" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Lin-ICRA-24,<br>   Author = "Yating Lin, Glen Chou, Dmitry Berenson",
+   journal = {Proceedings of the 61st IEEE International Conference on Robotics and Automation (ICRA)},<br>   Title = "Improving Out-of-Distribution Generalization of Learned Dynamics by Learning Pseudometrics and Constraint Manifolds",<br>   year = {2024}<br>}</pre></td>
+</tr>
 
 <tr id="Chou23a">
 	<td markdown="span"><br><img src="../images/cdc_23_01.png" onmouseover="this.src='../images/cdc_23_02.gif'" onmouseout="this.src='../images/cdc_23_01.png'" />   </td>
@@ -481,7 +499,7 @@ function toggleInfo(articleid,info) {
 <tr id='Dhinakaran17'>
 	<td markdown="span"><br><img src="../images/cdc_17_01.png" onmouseover="this.src='../images/cdc_17_02.png'" onmouseout="this.src='../images/cdc_17_01.png'" />   </td>
 	<td markdown="span"></td>
-	<td markdown="span"><br>**A Hybrid Framework for Multi-Vehicle Collision Avoidance** <br> 
+	<td markdown="span"><br>**A Hybrid Framework for Multi-Vehicle Collision Avoidance** <br>
 		<em>Aparna Dhinakaran\*, Mo Chen\*, **Glen Chou**, Jennifer C. Shih, Claire J. Tomlin</em> <br> 
 		Proceedings of the 56th IEEE Conference on Decision and Control (CDC), December 2017. <br>
 		[<a href="javascript:toggleInfo(&#39;Dhinakaran17&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Dhinakaran17&#39;); ">Abstract</a>]
@@ -520,9 +538,9 @@ function toggleInfo(articleid,info) {
 
 <table class="table">
 <colgroup>
-	<col width="30%" />
+	<col width="27%" />
 	<col width="2%" />
-	<col width="68%" />
+	<col width="71%" />
 </colgroup>
 <tbody>
 
@@ -581,7 +599,7 @@ function toggleInfo(articleid,info) {
 <tr id='Jiang16'>
 	<td markdown="span"><br><img src="../images/arxiv_16_01.png" onmouseover="this.src='../images/arxiv_16_02.png'" onmouseout="this.src='../images/arxiv_16_01.png'" />   </td>
 	<td markdown="span"></td>
-	<td markdown="span"><br>**Using neural networks to compute approximate and guaranteed feasible Hamilton-Jacobi-Bellman PDE solutions** 
+	<td markdown="span"><br>**Using neural networks to compute approximate and guaranteed feasible Hamilton-Jacobi-Bellman PDE solutions** <br>
 		<em>Frank Jiang\*, **Glen Chou**\*, Mo Chen\*, Claire J. Tomlin </em> <br> 
 		arXiv, November 2016. <br>
 		[<a href="javascript:toggleInfo(&#39;Jiang16&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Jiang16&#39;); ">Abstract</a>]

@@ -102,16 +102,16 @@ function toggleInfo(articleid,info) {
 </style>
 
 <table class="areas">
-        <tr onclick="window.location='constraints'">
-                <td class="ar_img"><img src="/images/auro_22_02.gif" /></td>
-                <td class="ar_text"><h2 style="font-size:1.5em"><a>Safely Learning Task Specifications <br> from Humans</a></h2></td>
-        </tr>
-        <tr onclick="window.location='trusted_domain'">
-                <td class="ar_img"><img src="/images/icra_23b_alt.gif" /></td>
-                <td class="ar_text"><h2 style="font-size:1.5em"><a>Reliable Planning and Control <br> with Learned Models</a></h2></td>
-        </tr>
-        <tr onclick="window.location='output_feedback'">
+        <tr onclick="window.location='verified_control'">
                 <td class="ar_img"><img src="/images/isls.gif"/></td>
-                <td class="ar_text"><h2 style="font-size:1.5em"><a>Fundamental Model-Based Tools <br> for Verifiable Control</a></h2></td>
+                <td class="ar_text"><h2 style="font-size:1.5em"><a>Formally-Verified Model-Based <br> Control Synthesis</a></h2></td>
+        </tr>
+        <tr onclick="window.location='learning_based_control'">
+                <td class="ar_img"><img src="/images/icra_23b_alt.gif" /></td>
+                <td class="ar_text"><h2 style="font-size:1.5em"><a>Trustworthy Learning-Based <br> Planning and Control <br></a></h2></td>
+        </tr>
+        <tr onclick="window.location='safe_lfd'">
+                <td class="ar_img"><img src="/images/auro_22_02.gif" /></td>
+                <td class="ar_text"><h2 style="font-size:1.5em"><a>Safe and Robust <br> Human-Robot Interaction</a></h2></td>
         </tr>
 </table>

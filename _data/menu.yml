@@ -1,6 +1,15 @@
 
 - title: "Projects"
   href: "/projects/"
+
+- title: "People"
+  href: "/people/"
+
+- title: "Openings"
+  href: "/openings/"
   
 - title: "Publications"
   href: "/publications/"
+
+- title: "Software"
+  href: "/software/"

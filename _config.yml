@@ -13,4 +13,4 @@ rgate_username: Glen_Chou
 markdown: kramdown
 
 # Other options
-excerpt_separator: "<!--more-->"
+excerpt_separator: "<!--more-->" 

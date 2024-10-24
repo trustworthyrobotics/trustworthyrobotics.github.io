@@ -21,7 +21,7 @@ layout: page
 
 <div style="width: 90%; max-width: 1200px; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin:  0 auto;">
   <div id="content" style="max-height: 60px; overflow: hidden; transition: max-height 0.5s ease;">
-    <p><span style="color:  red;"><b><i>News:</i></b></span> We are actively recruiting PhD students to join the lab in Fall 2025 (deadlines ranging between <span style="color:  red;"><b>December 2, 2024</b></span> to <span style="color:  red;"><b>December 16, 2024</b></span>), and we are also looking for driven UG and MS Georgia Tech students to contribute to our research. See the <a href="openings/">openings</a> page for more details.</p>
+    <p><span style="color:  red;"><b><i>News:</i></b></span> We are actively recruiting PhD students to join the lab in Fall 2025 (deadlines ranging between <span style="color:  red;"><b>December 2, 2024</b></span> to <span style="color:  red;"><b>December 16, 2024</b></span>), and we are also looking for driven UG and MS Georgia Tech students to contribute to our research. See the <a href="phd_flyer.pdf">flyer</a> and the <a href="openings/">openings</a> page for more details.</p>
   </div>
   <button id="moreButton" onclick="revealMore()" style="margin-top: 10px;">More</button>
 </div>

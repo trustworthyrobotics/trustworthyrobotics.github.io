@@ -19,8 +19,14 @@ layout: page
     </div>
 </div> -->
 
-<div style="width: 90%; max-width: 1200px; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin:  0 auto;">
-  <div id="content" style="max-height: 60px; overflow: hidden; transition: max-height 0.5s ease;">
+<div style="width: 96%; max-width: 1700px; overflow: hidden; border: 1px solid #ccc; padding: 10px; margin:  0 auto;">
+  <div id="content" style="max-height: 260px; overflow: hidden; transition: max-height 0.5s ease;">
+    <i><b>Mar. 3, 2026.</b></i> One paper (on <a href="https://arxiv.org/abs/2508.19945">multi-agent constraint learning</a>) accepted to the IEEE Robotics and Automation Letters (RA-L).<br>
+    <i><b>Feb. 21, 2026.</b></i> One paper (on <a href="https://arxiv.org/abs/2511.19878">robust fine-tuning for improving OOD generalization of VLA models</a>) accepted to CVPR 2026.<br>
+    <i><b>Jan. 31, 2026.</b></i> Five papers (on <a href="https://arxiv.org/abs/2509.13434">deformable object simulation via convex optimization</a>, <a href="https://arxiv.org/abs/2509.16826">robust feedback motion planning for multi-agent systems</a>, <a href="https://arxiv.org/abs/2510.07725">probabilistically-safe locomotion</a>, <a href="https://arxiv.org/abs/2509.19688">formal verification for generative motion planners</a>, and <a href="https://arxiv.org/abs/2509.12747">navigation via a hybrid mixture of learning-based and model-based experts</a>) accepted to ICRA 2026.<br>
+    <i><b>Jan. 26, 2026.</b></i> One paper (on <a href="https://arxiv.org/abs/2509.15109">learning constraints from stochastic demonstrations</a>) accepted to the IEEE Control Systems Letters (L-CSS), with presentation at ACC 2026.<br>
+    <i><b>Jan. 22, 2026.</b></i> Three papers (on <a href="https://arxiv.org/abs/2601.01076">Koopman-based reachability</a> (<span style="color:  red;">oral presentation</span>), <a href="https://arxiv.org/abs/2602.12047">stastically-assured robust MPC via conformal prediction</a>, and <a href="https://arxiv.org/abs/2512.22757">active constraint learning</a>) accepted to L4DC 2026.<br>
+    <i><b>Nov. 11, 2025.</b></i> One paper (on <a href="https://arxiv.org/abs/2506.06944">fast LiDAR perception from streaming data</a>) accepted to WACV 2026.<br>
     <p><span style="color:  red;"><b><i>News:</i></b></span> We are actively recruiting PhD students to join the lab in Fall 2025 (deadlines ranging between <span style="color:  red;"><b>December 2, 2024</b></span> to <span style="color:  red;"><b>December 16, 2024</b></span>), and we are also looking for driven UG and MS Georgia Tech students to contribute to our research. See the <a href="phd_flyer.pdf">flyer</a> and the <a href="openings/">openings</a> page for more details.</p>
   </div>
   <button id="moreButton" onclick="revealMore()" style="margin-top: 10px;">More</button>

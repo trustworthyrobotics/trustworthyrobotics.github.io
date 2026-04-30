@@ -60,11 +60,48 @@ function toggleInfo(articleid,info) {
 
 <table class="table">
 <colgroup>
-	<col width="20%" />
+	<col width="18%" />
 	<col width="2%" />
-	<col width="78%" />
+	<col width="80%" />
 </colgroup>
 <tbody>
+<style>
+  table.table {
+    font-size: 0.95em;
+  }
+  table.table td {
+    padding-top: 0.0rem;
+    padding-bottom: 0.6rem;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+  table.table > tbody > tr:nth-child(odd):not(.abstract):not(.bibtex):not(.notes) {
+    background: #ffffff;
+  }
+
+  table.table > tbody > tr:nth-child(even):not(.abstract):not(.bibtex):not(.notes) {
+    background: #f5f5f5;
+  }
+</style>
+
+<tr id="Hong26a">
+	<td markdown="span"><br><img src="../images/ral_26_polymerge.jpg" onmouseover="this.src='../images/ral_26_polymerge.gif'" onmouseout="this.src='../images/ral_26_polymerge.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation** <br> 
+		<em>Jihoon Hong, Chih-Yuan Chiu, Sara Fridovich-Keil, **Glen Chou**</em> <br> 
+		IEEE Robotics and Automation Letters (RA-L), April 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Hong26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Hong26a&#39;); ">Abstract</a>]
+                 \[[arXiv](TBD)\] \[[PDF](https://athlon76.github.io/PolyMerge-website/static/pdfs/paper.pdf)\] \[<a href="TBD">DOI</a>\] \[<a href="https://athlon76.github.io/PolyMerge-website/">Project Website</a>\] \[<a href="TBD">Supplementary Video</a>\] [<a href="javascript:toggleInfo(&#39;Hong26a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+</tr>
+<tr id="abs_Hong26a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Obstacle avoidance is essential for safe navigation and motion planning. Recent advances in radiance field reconstruction have enabled object detection and modeling with unprecedented fidelity, but remain too memory- and compute-intensive for deployment in on-board perception-based motion planning. To address these limitations, we propose PolyMerge to transform a large, photorealistic 3D Gaussian Splatting (3DGS) model of a scene into a lightweight representation as a set of convex polytopes whose enclosed volume is guaranteed to over-approximate all obstacles in the original 3DGS model. PolyMerge uses a variable number of polytopes to trade off conservativeness and computational cost, and integrates with polytope-based control barrier functions (CBFs) to ensure collision-free path planning. We showcase PolyMerge in simulation and hardware experiments using a small Crazyflie drone, which uses PolyMerge to compute and follow safe trajectories in real time using extremely limited onboard compute resources, outperforming baselines in speed while guaranteeing safety. </div></td>
+  </tr>
+  <tr id="bib_Hong26a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Hong-RAL-26,<br>   Author = "Jihoon Hong, Chih-Yuan Chiu, Sara Fridovich-Keil, and Glen Chou",
+   journal = {IEEE Robotics and Automation Letters (RA-L)},<br>   Title = "PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation",<br>   year = {2026}<br>}</pre></td>
+</tr>
+
 
 <tr id="Zhang26a">
 	<td markdown="span"><br><img src="../images/ral26_multicl.jpg" onmouseover="this.src='../images/ral26_multicl.gif'" onmouseout="this.src='../images/ral26_multicl.jpg'" />   </td>
@@ -244,12 +281,107 @@ function toggleInfo(articleid,info) {
 
 <table class="table">
 <colgroup>
-	<col width="20%" />
+	<col width="18%" />
 	<col width="2%" />
-	<col width="78%" />
+	<col width="80%" />
 </colgroup>
 <tbody>
 
+<tr id="Skifstad26a">
+	<td markdown="span"><br><img src="../images/icml_26_alqr_02.png" onmouseover="this.src='../images/icml_26_alqr_01.png'" onmouseout="this.src='../images/icml_26_alqr_02.png'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Local Linearity of LLMs Enables Activation Steering via Model-Based Linear Optimal Control** <br> 
+		<em>Julian Skifstad, Xinyue Annie Yang, **Glen Chou**</em> <br> 
+		 Proceedings of the 43rd International Conference on Machine Learning (ICML), July 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Skifstad26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Skifstad26a&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2604.19018)\] \[<a href="https://arxiv.org/pdf/2604.19018">PDF</a>\] \[<a href="https://github.com/trustworthyrobotics/lqr-activation-steering">Code</a>\] [<a href="javascript:toggleInfo(&#39;Skifstad26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+    </td>
+</tr>
+<tr id="abs_Skifstad26a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Inference-time LLM alignment methods, particularly activation steering, offer an alternative to fine-tuning by directly modifying activations during generation. Existing methods, however, often rely on non-anticipative interventions that ignore how perturbations propagate through transformer layers and lack online error feedback, resulting in suboptimal, open-loop control. To address this, we show empirically that, despite the nonlinear structure of transformer blocks, layer-wise dynamics across multiple LLM architectures and scales are well-approximated by locally-linear models. Exploiting this property, we model LLM inference as a linear time-varying dynamical system and adapt the classical linear quadratic regulator to compute feedback controllers using layer-wise Jacobians, steering activations toward desired semantic setpoints in closed-loop with minimal computational overhead and no offline training. We also derive theoretical bounds on setpoint tracking error, enabling formal guarantees on steering performance. Using a novel adaptive semantic feature setpoint signal, our method yields robust, fine-grained behavior control across models, scales, and tasks, including state-of-the-art modulation of toxicity, truthfulness, refusal, and arbitrary concepts, surpassing baseline steering methods. </div></td>
+  </tr>
+<tr id="bib_Skifstad26a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Skifstad-ICML-26,<br>   Author = "Julian Skifstad, Xinyue Annie Yang, Glen Chou",
+   journal = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},<br>   Title = "Local Linearity of LLMs Enables Activation Steering via Model-Based Linear Optimal Control",<br>   year = {2026}<br>}</pre></td>
+</tr>
+
+
+<tr id="Fang26a">
+	<td markdown="span"><br><img src="../images/rss_26_gpu.jpg" onmouseover="this.src='../images/rss_26_gpu.gif'" onmouseout="this.src='../images/rss_26_gpu.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Safe Large-Scale Robust Nonlinear MPC in Milliseconds via Reachability-Constrained System Level Synthesis on the GPU** <br> 
+		<em>Jeffrey Fang, **Glen Chou**</em> <br> 
+		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Fang26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Fang26a&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2604.07644)\] \[<a href="https://arxiv.org/pdf/2604.07644">PDF</a>\] \[<a href="https://github.com/Jeff300fang/gpu_sls">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Fang26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+    </td>
+</tr>
+<tr id="abs_Fang26a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: We present GPU-SLS, a GPU-parallelized framework for safe, robust nonlinear model predictive control (MPC) that scales to high-dimensional uncertain robotic systems and long planning horizons. Our method jointly optimizes an inequality-constrained, dynamically-feasible nominal trajectory, a tracking controller, and a closed-loop reachable set under disturbance, all in real-time. To efficiently compute nominal trajectories, we develop a sequential quadratic programming procedure with a novel GPU-accelerated quadratic program (QP) solver that uses parallel associative scans and adaptive caching within an alternating direction method of multipliers (ADMM) framework. The same GPU QP backend is used to optimize robust tracking controllers and closed-loop reachable sets via system level synthesis (SLS), enabling reachability-constrained control in both fixed- and receding-horizon settings. We achieve substantial performance gains, reducing nominal trajectory solve times by 97.7% relative to state-of-the-art CPU solvers and 71.8% compared to GPU solvers, while accelerating SLS-based control and reachability by 237x. Despite large problem scales, our method achieves 100% empirical safety, unlike high-dimensional learning-based reachability baselines. We validate our approach on complex nonlinear systems, including whole-body quadrupeds (61D) and humanoids (75D), synthesizing robust control policies online on the GPU in 20 milliseconds on average and scaling to problems with 2 x 10^5 decision variables and 8 x 10^4 constraints. </div></td>
+  </tr>
+<tr id="bib_Fang26a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Fang-RSS-26,<br>   Author = "Jeffrey Fang, Glen Chou",
+   journal = {Proceedings of Robotics: Science and Systems (RSS) XXII},<br>   Title = "Safe Large-Scale Robust Nonlinear MPC in Milliseconds via Reachability-Constrained System Level Synthesis on the GPU",<br>   year = {2026}<br>}</pre></td>
+</tr>
+
+<tr id="Li26b">
+	<td markdown="span"><br><img src="../images/rss_26_contact.jpg" onmouseover="this.src='../images/rss_26_contact.gif'" onmouseout="this.src='../images/rss_26_contact.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Certified Gradient-Based Contact-Rich Manipulation via Smoothing-Error Reachable Tubes** <br> 
+		<em>Wei-Chen Li, **Glen Chou**</em> <br> 
+		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Li26b&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Li26b&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2602.09368)\] \[<a href="https://arxiv.org/pdf/2602.09368">PDF</a>\] \[<a href="TBD">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Li26b&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+    </td>
+</tr>
+<tr id="abs_Li26b" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Gradient-based methods can efficiently optimize controllers using physical priors and differentiable simulators, but contact-rich manipulation remains challenging due to discontinuous or vanishing gradients from hybrid contact dynamics. Smoothing the dynamics yields continuous gradients, but the resulting model mismatch can cause controller failures when executed on real systems. We address this trade-off by planning with smoothed dynamics while explicitly quantifying and compensating for the induced errors, providing formal guarantees of constraint satisfaction and goal reachability on the true hybrid dynamics. Our method smooths both contact dynamics and geometry via a novel differentiable simulator based on convex optimization, which enables us to characterize the discrepancy from the true dynamics as a set-valued deviation. This deviation constrains the optimization of time-varying affine feedback policies through analytical bounds on the system's reachable set, enabling robust constraint satisfaction guarantees for the true closed-loop hybrid dynamics, while relying solely on informative gradients from the smoothed dynamics. We evaluate our method on several contact-rich tasks, including planar pushing, object rotation, and in-hand dexterous manipulation, achieving guaranteed constraint satisfaction with lower safety violation and goal error than baselines. By bridging differentiable physics with set-valued robust control, our method is the first certifiable gradient-based policy synthesis method for contact-rich manipulation. </div></td>
+  </tr>
+<tr id="bib_Li26b" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Li-RSS-26,<br>   Author = "Wei-Chen Li, Glen Chou",
+   journal = {Proceedings of Robotics: Science and Systems (RSS) XXII},<br>   Title = "Certified Gradient-Based Contact-Rich Manipulation via Smoothing-Error Reachable Tubes",<br>   year = {2026}<br>}</pre></td>
+</tr>
+
+<tr id="Shen26a">
+	<td markdown="span"><br><img src="../images/rss_26_taylor.jpg" onmouseover="this.src='../images/rss_26_taylor.gif'" onmouseout="this.src='../images/rss_26_taylor.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Parallel Differentiable Reachability for Learning and Planning with Certified Neural Dynamics and Controllers** <br> 
+		<em>Keyi Shen, **Glen Chou**</em> <br> 
+		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Shen26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Shen26a&#39;); ">Abstract</a>]
+                \[[arXiv](TBD)\] \[<a href="TBD">PDF</a>\] \[<a href="TBD">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Shen26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+    </td>
+</tr>
+<tr id="abs_Shen26a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Neural network (NN) dynamics models and control policies achieve strong performance in robotics, but providing sound guarantees under uncertainty is difficult, especially when the NNs are components within the closed-loop system. Existing reachability tools offer formal over-approximations, yet are often non-differentiable, overly conservative, and too slow to integrate into modern learning and real-time planning pipelines. To address this, we present a parallelizable, differentiable reachability analysis tool in JAX that unifies continuous- and discrete-time systems and supports both analytical and NN-based dynamics and controllers. Our reachability tool uses Taylor-model flowpipe construction and CROWN-style linear bound relaxation and propagation, yielding a GPU-batched reachability primitive that can be differentiated and used in downstream objectives. Building on this primitive, we design (i) a certified training method that encourages the learning of reachability-friendly dynamics models and controllers, and (ii) a reachability-informed sampling-based MPC scheme that incorporates certified reachable sets during action selection and enables gradient-based refinement. Experiments on non-prehensile object manipulation and quadrotor control tasks show competitive performance to baseline planners while providing tight, certified reachability guarantees under uncertainty. </div></td>
+  </tr>
+<tr id="bib_Shen26a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Shen-RSS-26,<br>   Author = "Keyi Shen, Glen Chou",
+   journal = {Proceedings of Robotics: Science and Systems (RSS) XXII},<br>   Title = "Parallel Differentiable Reachability for Learning and Planning with Certified Neural Dynamics and Controllers",<br>   year = {2026}<br>}</pre></td>
+</tr>
+
+<tr id="Leeman26a">
+	<td markdown="span"><br><img src="../images/rss_26_vision.jpg" onmouseover="this.src='../images/rss_26_vision.gif'" onmouseout="this.src='../images/rss_26_vision.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**VISION-SLS: Safe Perception-Based Control from Learned Visual Representations via System Level Synthesis** <br> 
+		<em>Antoine Leeman\*, Shuyu Zhan\*, Melanie Zeilinger, **Glen Chou**</em> <br> 
+		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
+		[<a href="javascript:toggleInfo(&#39;Leeman26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Leeman26a&#39;); ">Abstract</a>]
+                \[[arXiv](https://arxiv.org/abs/2604.24894)\] \[<a href="https://arxiv.org/pdf/2604.24894">PDF</a>\] \[<a href="https://github.com/trustworthyrobotics/VISION-SLS">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Leeman26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+    </td>
+</tr>
+<tr id="abs_Leeman26a" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: We propose VISION-SLS, a method for nonlinear output-feedback control from high-resolution RGB images which provides robust constraint satisfaction guarantees under calibrated uncertainty bounds despite partial observability, sensor noise, and nonlinear dynamics. To enable scalability while retaining guarantees, we propose: (i) a learned low-dimensional observation map from pretrained visual features with state-dependent error bounds, and (ii) a causal affine time-varying output-feedback policy optimized via System Level Synthesis (SLS). We develop a scalable, novel solver for the resulting nonconvex program that leverages sequential convex programming coupled with efficient Riccati recursions. On two simulated visuomotor tasks (a 4D car and a 10D quadrotor) with >= 512 x 512 pixels and a 59D humanoid task with partial observability, our method enables safe, information-gathering behavior that reduces uncertainty while guaranteeing constraint satisfaction with empirically-calibrated error bounds. We also validate our method on hardware, safely controlling a ground vehicle from onboard images, outperforming baselines in safety rate and solve times. Together, these results show that learned visual abstractions coupled with an efficient solver make SLS-based safe visuomotor output-feedback practical at scale.</div></td>
+  </tr>
+<tr id="bib_Leeman26a" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Leeman-RSS-26,<br>   Author = "Antoine Leeman, Shuyu Zhan, Melanie Zeilinger, Glen Chou",
+   journal = {Proceedings of Robotics: Science and Systems (RSS) XXII},<br>   Title = "VISION-SLS: Safe Perception-Based Control from Learned Visual Representations via System Level Synthesis",<br>   year = {2026}<br>}</pre></td>
+</tr>
 
 <tr id="Nath26b">
 	<td markdown="span"><br><img src="../images/l4dc26_koop.jpg" onmouseover="this.src='../images/l4dc26_koop.gif'" onmouseout="this.src='../images/l4dc26_koop.jpg'" />   </td>
@@ -259,7 +391,7 @@ function toggleInfo(articleid,info) {
 		 Proceedings of the 8th Annual Learning for Dynamics & Control Conference (L4DC), June 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Nath26b&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Nath26b&#39;); ">Abstract</a>]
                 \[[arXiv](https://arxiv.org/abs/2601.01076)\] \[<a href="https://arxiv.org/pdf/2601.01076">PDF</a>\] [<a href="javascript:toggleInfo(&#39;Nath26b&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
-        <b><span style="color:red">Selected for oral presentation.</span></b>
+        <b><span style="color:red">Selected for oral presentation, top 10.3% of accepted papers.</span></b>
     </td>
 </tr>
 <tr id="abs_Nath26b" class="abstract noshow">
@@ -410,7 +542,7 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"><br><img src="../images/icra26_navmoe.jpg" onmouseover="this.src='../images/icra26_navmoe.gif'" onmouseout="this.src='../images/icra26_navmoe.jpg'" />   </td>
 	<td markdown="span"></td>
 	<td markdown="span"><br>**NavMoE: Hybrid Model-and Learning-based Traversability Estimation for Local Navigation via Mixture of Experts** <br> 
-		<em>Botao He\*, Amir Hossein Shahidzadeh\*, Yu Chen\*, Jiayi Wu, Tianrui Guan, Guofei Chen, Howie Choset, Dinesh Manocha, **Glen Chou**, Cornelia Fermuller, Yiannis Aloimonos</em> <br> 
+		<em>Botao He\*, Amir H. Shahidzadeh\*, Yu Chen\*, Jiayi Wu, Tianrui Guan, Guofei Chen, Howie Choset, Dinesh Manocha, **Glen Chou**, Cornelia Fermuller, Yiannis Aloimonos</em> <br> 
 		 Proceedings of the 43rd IEEE International Conference on Robotics and Automation (ICRA), June 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;He26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/He26a&#39;); ">Abstract</a>]
                 \[[arXiv](https://arxiv.org/abs/2509.12747)\] \[<a href="https://arxiv.org/pdf/2509.12747">PDF</a>\] \[<a href="https://www.youtube.com/watch?v=D9CSTXQi0Wk&pp=0gcJCcMKAYcqIYzv">Video</a>\] [<a href="javascript:toggleInfo(&#39;He26a&#39;,&#39;bibtex&#39;)">Cite</a>]
@@ -443,6 +575,8 @@ function toggleInfo(articleid,info) {
   <pre>@inproceedings{Zhang-WACV-26,<br>   Author = "Mellon M. Zhang, Glen Chou, Saibal Mukhopadhyay",
    journal = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},<br>   Title = "Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences",<br>   year = {2026}<br>}</pre></td>
 </tr>
+
+
 
 <tr id="Lin24">
 	<td markdown="span"><br><img src="../images/icra_24_01.png" onmouseover="this.src='../images/icra_24_02.png'" onmouseout="this.src='../images/icra_24_01.png'" />   </td>
@@ -763,16 +897,13 @@ function toggleInfo(articleid,info) {
 
 <hr>
 
-<br />
-
 <table class="table">
 <colgroup>
-	<col width="20%" />
+	<col width="18%" />
 	<col width="2%" />
-	<col width="78%" />
+	<col width="80%" />
 </colgroup>
 <tbody>
-
 
 <tr id="Leeman25">
 	<td markdown="span"><br><img src="../images/eurips_25_01.png" onmouseover="this.src='../images/eurips_25_01.png'" onmouseout="this.src='../images/eurips_25_01.png'" />   </td>
@@ -780,11 +911,14 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"><br>**Epistemically Aware Predictive Visuomotor Control** <br> 
 		<em>Antoine P. Leeman, Shuyu Zhan, Melanie Zeilinger\*, **Glen Chou\***</em> <br> 
 		EurIPS Workshop on Epistemic Intelligence in Machine Learning, December 2025. <br>
-                \[[PDF](https://glenchou.github.io/papers/Leeman25.pdf)\] [<a href="javascript:toggleInfo(&#39;Leeman25&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                [<a href="javascript:toggleInfo(&#39;Leeman25&#39;,&#39;abstract&#39;)">Abstract</a>] \[[PDF](https://glenchou.github.io/papers/Leeman25.pdf)\] [<a href="javascript:toggleInfo(&#39;Leeman25&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
+<tr id="abs_Leeman25" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: We design a safe visuomotor controller when perception is epistemically ambiguous due to occlusions, textureless regions, or distribution shift. Our approach is to replace point state estimates from images with credal (uncertainty) sets that a controller can leverage in real-time. To this end, we learn credal sets: a reduced measurement together with a state-dependent confidence set. We then design an ambiguity-aware output-feedback controller based on system level synthesis that treats it as a source of measurement ambiguity, propagates it through closed-loop responses, and enforces safety via uncertainty propagation and constraint tightening. The resulting pipeline links perception to control through sets, yielding certificates conditioned on coverage and naturally encouraging reducing epistemic uncertainty behavior. An efficient sequential convex programming implementation with Riccati recursions enables real-time control. In high-fidelity vision-based simulations of a car and a quadcopter, our method achieves safe trajectories in seconds while avoiding overconfidence under epistemic shift. </div></td>
+  </tr>
 <tr id="bib_Leeman25" class="bibtex noshow">
 <td colspan="3"><b>BibTeX</b>:
-  <pre>@inproceedings{Zhang-CVPR4DV-25,<br>   Author = "Antoine P. Leeman, Shuyu Zhan, Melanie Zeilinger, Glen Chou",
+  <pre>@inproceedings{Leeman-EurIPS-25,<br>   Author = "Antoine P. Leeman, Shuyu Zhan, Melanie Zeilinger, Glen Chou",
    journal = {EurIPS Workshop on Epistemic Intelligence in Machine Learning},<br>   Title = "Epistemically Aware Predictive Visuomotor Control",<br>   year = {2025}<br>}</pre></td>
 </tr>
 
@@ -792,23 +926,30 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"><br><img src="../images/wacv_26_01.png" onmouseover="this.src='../images/wacv_26_02.png'" onmouseout="this.src='../images/wacv_26_01.png'" />   </td>
 	<td markdown="span"></td>
 	<td markdown="span"><br>**Polar Hierarchical Mamba: Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences** <br> 
-		<em>Mellon M. Zhang, **Glen Chou\***</em> <br> 
+		<em>Mellon M. Zhang, **Glen Chou**</em> <br> 
 		IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 4D Vision Workshop, June 2025. <br>
-                \[[PDF](https://glenchou.github.io/papers/Zhang25.pdf)\] [<a href="javascript:toggleInfo(&#39;Zhang25&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                [<a href="javascript:toggleInfo(&#39;Zhang25&#39;,&#39;abstract&#39;)">Abstract</a>] \[[PDF](https://glenchou.github.io/papers/Zhang25.pdf)\] [<a href="javascript:toggleInfo(&#39;Zhang25&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
+<tr id="abs_Zhang25" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Accurate and efficient object detection is a crucial component for fully autonomous self-driving. LiDAR sensors are employed to augment or replace cameras for more robustness in diverse driving situations, making object detection on LiDAR point clouds a critical area of research and improvement. Traditional approaches to LiDAR object detection wait for a full 360 degree turn of the scanning sensor before processing the entire point cloud in one go, introducing significant latency and lowering throughput. Previous streaming approaches use the raw LiDAR polar coordinate system to process egocentric partial scans of point clouds, but rely on translation-invariant convolutions, which are incompatible with polar coordinates and lead to performance degradation. In this paper, we show that the reliance on convolutions is not necessary and propose a Mamba-only backbone with Polar Hierarchical Mamba (PHiM) blocks, aggregating per-point features within each partial scan with a local bidirectional state space model and capturing higher-level global features in a streaming fashion with a global forward state space model. Our model on the Waymo Open dataset demonstrates 10% performance improvement from the previous leading polar-based detector, featuring state of the art performance among all polar-based methods while being competitive with existing Cartesian-based detectors with a 2x improvement in processing throughput evaluated as predictions per second. </div></td>
+  </tr>
 <tr id="bib_Zhang25" class="bibtex noshow">
 <td colspan="3"><b>BibTeX</b>:
   <pre>@inproceedings{Zhang-CVPR4DV-25,<br>   Author = "Mellon M. Zhang, Glen Chou",
    journal = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshop on 4D Vision},<br>   Title = "Polar Hierarchical Mamba: Towards Streaming LiDAR Object Detection with Point Clouds as Egocentric Sequences",<br>   year = {2025}<br>}</pre></td>
 </tr>
+
 <tr id="Chou22c">
 	<td markdown="span"><br><img src="../images/rsspw_01.png" onmouseover="this.src='../images/rsspw_01.png'" onmouseout="this.src='../images/rsspw_01.png'" />   </td>
 	<td markdown="span"></td>
 	<td markdown="span"><br>**Safely Integrating Perception, Planning, and Control for Robust Learning-Based Robot Autonomy** <br> 
-		<em>**Glen Chou\***</em> <br> 
+		<em>**Glen Chou**</em> <br> 
 		Robotics: Science and Systems, Pioneers Workshop, June 2022. <br>
-                \[[PDF](https://glenchou.github.io/papers/Chou22c.pdf)\] [<a href="javascript:toggleInfo(&#39;Chou22c&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                [<a href="javascript:toggleInfo(&#39;Chou22c&#39;,&#39;abstract&#39;)">Abstract</a>] \[[PDF](https://glenchou.github.io/papers/Chou22c.pdf)\] [<a href="javascript:toggleInfo(&#39;Chou22c&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
+<tr id="abs_Chou22c" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>:  </div></td>
+  </tr>
 <tr id="bib_Chou22c" class="bibtex noshow">
 <td colspan="3"><b>BibTeX</b>:
   <pre>@inproceedings{Chou-RSSPioneersWS-22,<br>   Author = "Glen Chou",

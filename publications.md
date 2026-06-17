@@ -893,6 +893,46 @@ function toggleInfo(articleid,info) {
 
 <br>
 
+## Theses
+
+<hr>
+
+<table class="table">
+<colgroup>
+	<col width="18%" />
+	<col width="2%" />
+	<col width="80%" />
+</colgroup>
+<tbody>
+
+<tr id="Chou22d">
+	<td markdown="span"><br><img src="../images/auro_22_01.jpg" onmouseover="this.src='../images/wafr_22_01.jpg'" onmouseout="this.src='../images/auro_22_01.jpg'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**Safe End-to-end Learning-based Robot Autonomy via Integrated Perception, Planning, and Control** <br> 
+		<em>**Glen Chou**</em> <br> 
+		PhD thesis, University of Michigan, August 2022. <br>
+                [<a href="javascript:toggleInfo(&#39;Chou22d&#39;,&#39;abstract&#39;)">Abstract</a>] \[[PDF](https://glenchou.github.io/papers/chou_thesis.pdf)\] [<a href="javascript:toggleInfo(&#39;Chou22d&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+</tr>
+<tr id="abs_Chou22d" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Trustworthy robots must be able to complete tasks reliably while obeying safety constraints. While traditional methods for constrained motion planning and optimal control can achieve this if the environment is accurately modeled and the task is unambiguous, future robots will be deployed in unstructured settings with poorly-understood or inaccurate dynamics, observation models, and task specifications. Thus, to plan and perform control, robots will invariably need data to learn and refine their understanding of their environments and tasks. Though machine learning provides a means to obtain perception and dynamics models from data, blindly trusting these potentially-unreliable models when planning can cause unsafe and unpredictable behavior at runtime. To this end, this dissertation is motivated by the following questions: (1) To refine their understanding of the desired task, how can robots learn components of a constrained motion planner (e.g., constraints, task specifications) in a data-efficient manner? and (2) How can robots quantify and remain robust to the inevitable uncertainty and error in learned components within the broader perception-planning-control autonomy loop in order to provide system-level guarantees on safety and task completion at runtime?
+
+To address the first question, we propose methods that use successful human demonstrations to learn unknown constraints and task specifications. The crux of this problem relies on learning what not to do (i.e., behavior violating the unknown constraints or specifications) from only successful examples. We make the insight that the demonstrations' approximate optimality implicitly defines what the robot should not do, and that this information can be extracted by simulating lower-cost trajectories and by using the Karush-Kuhn-Tucker (KKT) optimality conditions. These strong optimality priors make our method highly data-efficient. We use these methods to learn a broad class of constraints, including nonconvex obstacle constraints, and linear temporal logic formulas, which can describe complex temporally-extended robotic tasks. We demonstrate that our constraint-learning methods scale to high-dimensional systems, e.g., learning to complete novel constrained navigation tasks for a simulated 12D quadrotor and multi-stage manipulation tasks on a 7DOF arm (both simulated and in the real world).
+
+To address the second question, we develop methods addressing uncertainty in A) constraints learned from demonstrations and B) dynamics models and perception modules learned from data. To quantify constraint uncertainty, we extract the set of constraints that are consistent with the demonstrations' KKT conditions (i.e., a belief over constraints), which is done by solving a sequence of robust mixed integer programs. We show that the robot can plan probabilistically-safe trajectories using this constraint belief, which can be updated using constraint data gathered in execution. To address uncertainty when planning with learned dynamics models of underactuated systems controlled with high-dimensional (image) observations, we estimate bounds on the error of the learned models inside a domain around their training data. Using tools from contraction theory, we propagate this model error bound into a trajectory tracking error bound. This tracking bound is used to constrain the planner to only return plans that can be safely tracked, with high probability, in spite of the errors in the perception and dynamics. We demonstrate that these theoretical guarantees translate to success in simulation, enabling safe task completion at runtime on a variety of challenging high-dimensional, underactuated systems using rich sensor observations (e.g., RGB-D images) in the feedback control loop. </div></td>
+  </tr>
+<tr id="bib_Chou22d" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Chou-Thesis-25,<br>   Author = "Glen Chou",
+   journal = {PhD thesis, University of Michigan},<br>   Title = "Safe End-to-end Learning-based Robot Autonomy via Integrated Perception, Planning, and Control",<br>   year = {2022}<br>}</pre></td>
+</tr>
+
+
+</tbody>
+</table>
+
+<br>
+
+
 ## Refereed Workshop Papers/Technical Reports
 
 <hr>

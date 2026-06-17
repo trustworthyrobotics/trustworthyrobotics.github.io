@@ -89,9 +89,9 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"></td>
 	<td markdown="span"><br>**PolyMerge: Compressing 3D Gaussian Splats with Polytope Coverings for Provably Safe Resource-Constrained Navigation** <br> 
 		<em>Jihoon Hong, Chih-Yuan Chiu, Sara Fridovich-Keil, **Glen Chou**</em> <br> 
-		IEEE Robotics and Automation Letters (RA-L), April 2026. <br>
+		IEEE Robotics and Automation Letters (RA-L), with presentation at IROS 2026, vol. 11, no. 7, pp. 8512-8519, July 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Hong26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Hong26a&#39;); ">Abstract</a>]
-                 \[[arXiv](TBD)\] \[[PDF](https://athlon76.github.io/PolyMerge-website/static/pdfs/paper.pdf)\] \[<a href="TBD">DOI</a>\] \[<a href="https://athlon76.github.io/PolyMerge-website/">Project Website</a>\] \[<a href="TBD">Supplementary Video</a>\] [<a href="javascript:toggleInfo(&#39;Hong26a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
+                 \[[arXiv](https://arxiv.org/abs/2606.16232)\] \[[PDF](https://arxiv.org/pdf/2606.16232)\] \[<a href="https://doi.org/10.1109/LRA.2026.3692083">DOI</a>\] \[<a href="https://athlon76.github.io/PolyMerge-website/">Project Website</a>\] \[<a href="https://www.youtube.com/watch?v=eEdih0tga0M">Supplementary Video</a>\] [<a href="javascript:toggleInfo(&#39;Hong26a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
 <tr id="abs_Hong26a" class="abstract noshow">
     <td colspan="3"><div align="justify"> <b>Abstract</b>: Obstacle avoidance is essential for safe navigation and motion planning. Recent advances in radiance field reconstruction have enabled object detection and modeling with unprecedented fidelity, but remain too memory- and compute-intensive for deployment in on-board perception-based motion planning. To address these limitations, we propose PolyMerge to transform a large, photorealistic 3D Gaussian Splatting (3DGS) model of a scene into a lightweight representation as a set of convex polytopes whose enclosed volume is guaranteed to over-approximate all obstacles in the original 3DGS model. PolyMerge uses a variable number of polytopes to trade off conservativeness and computational cost, and integrates with polytope-based control barrier functions (CBFs) to ensure collision-free path planning. We showcase PolyMerge in simulation and hardware experiments using a small Crazyflie drone, which uses PolyMerge to compute and follow safe trajectories in real time using extremely limited onboard compute resources, outperforming baselines in speed while guaranteeing safety. </div></td>
@@ -108,7 +108,7 @@ function toggleInfo(articleid,info) {
 	<td markdown="span"></td>
 	<td markdown="span"><br>**Constraint Learning in Multi-Agent Dynamic Games from Demonstrations of Local Nash Interactions** <br> 
 		<em>Zhouyu Zhang\*, Chih-Yuan Chiu\*, **Glen Chou**</em> <br> 
-		IEEE Robotics and Automation Letters (RA-L), vol. 11, no. 6, pp. 6696-6703, March 2026. <br>
+		IEEE Robotics and Automation Letters (RA-L), with presentation at IROS 2026, vol. 11, no. 6, pp. 6696-6703, March 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Zhang26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Zhang26a&#39;); ">Abstract</a>]
                  \[[arXiv](https://arxiv.org/abs/2508.19945)\] \[[PDF](https://ieeexplore.ieee.org/document/11455925)\] \[<a href="https://doi.org/10.1109/LRA.2026.3677745">DOI</a>\] \[<a href="https://www.youtube.com/watch?v=62HpDQlrQiI">Supplementary Video</a>\] [<a href="javascript:toggleInfo(&#39;Zhang26a&#39;,&#39;bibtex&#39;)">Cite</a>]</td>
 </tr>
@@ -314,7 +314,7 @@ function toggleInfo(articleid,info) {
 		<em>Jeffrey Fang, **Glen Chou**</em> <br> 
 		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Fang26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Fang26a&#39;); ">Abstract</a>]
-                \[[arXiv](https://arxiv.org/abs/2604.07644)\] \[<a href="https://arxiv.org/pdf/2604.07644">PDF</a>\] \[<a href="https://github.com/Jeff300fang/gpu_sls">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Fang26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+                \[[arXiv](https://arxiv.org/abs/2604.07644)\] \[<a href="https://arxiv.org/pdf/2604.07644">PDF</a>\] \[<a href="https://trustworthyrobotics.github.io/gpu_sls_site/">Project Website</a>\] \[<a href="https://github.com/Jeff300fang/gpu_sls">Code</a>\] \[<a href="https://www.youtube.com/watch?v=JbViVhenPTw">Video</a>\] [<a href="javascript:toggleInfo(&#39;Fang26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
     </td>
 </tr>
 <tr id="abs_Fang26a" class="abstract noshow">
@@ -333,7 +333,7 @@ function toggleInfo(articleid,info) {
 		<em>Wei-Chen Li, **Glen Chou**</em> <br> 
 		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Li26b&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Li26b&#39;); ">Abstract</a>]
-                \[[arXiv](https://arxiv.org/abs/2602.09368)\] \[<a href="https://arxiv.org/pdf/2602.09368">PDF</a>\] \[<a href="TBD">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Li26b&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+                \[[arXiv](https://arxiv.org/abs/2602.09368)\] \[<a href="https://arxiv.org/pdf/2602.09368">PDF</a>\] \[<a href="https://trustworthyrobotics.github.io/quasistatic-contact-SLS/">Project Website</a>\] \[<a href="https://github.com/trustworthyrobotics/quasistatic-contact-SLS">Code</a>\] \[<a href="https://www.youtube.com/watch?v=LFxi2hkQJyo&pp=0gcJCT4LAYcqIYzv">Video</a>\] [<a href="javascript:toggleInfo(&#39;Li26b&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
     </td>
 </tr>
 <tr id="abs_Li26b" class="abstract noshow">
@@ -352,7 +352,7 @@ function toggleInfo(articleid,info) {
 		<em>Keyi Shen, **Glen Chou**</em> <br> 
 		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Shen26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Shen26a&#39;); ">Abstract</a>]
-                \[[arXiv](TBD)\] \[<a href="TBD">PDF</a>\] \[<a href="TBD">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Shen26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+                \[[arXiv](TBD)\] \[<a href="TBD">PDF</a>\] \[<a href="https://trustworthyrobotics.github.io/diffreach_site/">Project Website</a>\] \[<a href="https://github.com/trustworthyrobotics/DiffReach">Code (DiffReach)</a>\] \[<a href="https://github.com/trustworthyrobotics/DiffReach-Robotics">Code (DiffReach-Robotics)</a>\] \[<a href="https://www.youtube.com/watch?v=E6zeKt26TcM&pp=0gcJCT4LAYcqIYzv">Video</a>\] [<a href="javascript:toggleInfo(&#39;Shen26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
     </td>
 </tr>
 <tr id="abs_Shen26a" class="abstract noshow">
@@ -371,7 +371,7 @@ function toggleInfo(articleid,info) {
 		<em>Antoine Leeman\*, Shuyu Zhan\*, Melanie Zeilinger, **Glen Chou**</em> <br> 
 		 Proceedings of Robotics: Science and Systems (RSS) XXII, July 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Leeman26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Leeman26a&#39;); ">Abstract</a>]
-                \[[arXiv](https://arxiv.org/abs/2604.24894)\] \[<a href="https://arxiv.org/pdf/2604.24894">PDF</a>\] \[<a href="https://github.com/trustworthyrobotics/VISION-SLS">Code</a>\] \[<a href="TBD">Video</a>\] [<a href="javascript:toggleInfo(&#39;Leeman26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
+                \[[arXiv](https://arxiv.org/abs/2604.24894)\] \[<a href="https://arxiv.org/pdf/2604.24894">PDF</a>\] \[<a href="https://trustworthyrobotics.github.io/VISION-SLS/">Project Website</a>\] \[<a href="https://github.com/trustworthyrobotics/VISION-SLS">Code</a>\] \[<a href="https://www.youtube.com/watch?v=a07cRhBb3xc&pp=0gcJCT4LAYcqIYzv">Video</a>\] [<a href="javascript:toggleInfo(&#39;Leeman26a&#39;,&#39;bibtex&#39;)">Cite</a>]<br>
     </td>
 </tr>
 <tr id="abs_Leeman26a" class="abstract noshow">
@@ -448,7 +448,7 @@ function toggleInfo(articleid,info) {
 		<em>Chengyue Huang\*, Mellon M. Zhang\*, Robert Azarcon, **Glen Chou**, Zsolt Kira</em> <br> 
 		 Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), June 2026. <br>
 		[<a href="javascript:toggleInfo(&#39;Huang26a&#39;,&#39;abstract&#39;)" onclick="javascript:pageTracker._trackPageview(&#39;/abstracts/Huang26a&#39;); ">Abstract</a>]
-                \[[arXiv](https://arxiv.org/abs/2511.19878)\] \[<a href="https://arxiv.org/pdf/2511.19878">PDF</a>\] \[<a href="https://mapsvla.github.io/">Project Website</a>\] [<a href="javascript:toggleInfo(&#39;Huang26a&#39;,&#39;bibtex&#39;)">Cite</a>]
+                \[[arXiv](https://arxiv.org/abs/2511.19878)\] \[<a href="https://arxiv.org/pdf/2511.19878">PDF</a>\] \[<a href="https://mapsvla.github.io/">Project Website</a>\] \[<a href="https://github.com/chengyuehuang511/MAPS-VLA">Code</a>\] [<a href="javascript:toggleInfo(&#39;Huang26a&#39;,&#39;bibtex&#39;)">Cite</a>]
     </td>
 </tr>
 <tr id="abs_Huang26a" class="abstract noshow">
@@ -944,6 +944,23 @@ To address the second question, we develop methods addressing uncertainty in A) 
 	<col width="80%" />
 </colgroup>
 <tbody>
+
+<tr id="Zhang26b">
+	<td markdown="span"><br><img src="../images/zhang26b.png" onmouseover="this.src='../images/zhang26b.png'" onmouseout="this.src='../images/zhang26b.png'" />   </td>
+	<td markdown="span"></td>
+	<td markdown="span"><br>**On the Adversarial Robustness of Temporal LiDAR Object Detectors** <br> 
+		<em>Mellon M. Zhang\*, Siddhant Panse\*, Akshal Dhal, Rishit Sarkar, Zimo Fan, **Glen Chou**</em> <br> 
+		CVPR SPAR-3D Workshop: Security, Privacy, and Adversarial Robustness in 3D Generative Vision Models, June 2026. <br>
+                [<a href="javascript:toggleInfo(&#39;Zhang26b&#39;,&#39;abstract&#39;)">Abstract</a>] \[[PDF](https://glenchou.github.io/papers/Zhang26b.pdf)\] [<a href="javascript:toggleInfo(&#39;Zhang26b&#39;,&#39;bibtex&#39;)">Cite</a>] <br> <b><span style="color:red">Best paper award, third place.</span></b> </td>
+</tr>
+<tr id="abs_Zhang26b" class="abstract noshow">
+    <td colspan="3"><div align="justify"> <b>Abstract</b>: Accurate 3D object detection is critical for autonomous driving, yet robustness to adversarial attacks -- such as LiDAR spoofing -- remains underexplored. While recent LiDAR-based detectors leverage temporal context to improve performance, they are only evaluated under benign conditions. In this work, we introduce ATLAS (Adversarial Temporal LiDAR Attack Suite), a large-scale, physically grounded benchmark for evaluating spoofing attacks on temporal detectors. ATLAS simulates realistic sensor-level attacks by injecting structured adversarial point clouds into multi-frame sequences. Our results reveal a counterintuitive trend: temporal models are consistently more vulnerable than single-frame baselines, with attack success rates increasing with memory length. We further observe systematic overconfidence on spoofed objects, indicating a failure to distinguish corrupted history from reliable inputs. Together, these findings show that temporal aggregation -- when built on the assumption of clean observations -- becomes a liability under adversarial perturbations, motivating the need for uncertainty-aware temporal perception. </div></td>
+  </tr>
+<tr id="bib_Zhang26b" class="bibtex noshow">
+<td colspan="3"><b>BibTeX</b>:
+  <pre>@inproceedings{Zhang-CVPR-SPAR3D-26,<br>   Author = "Mellon M. Zhang, Siddhant Panse, Akshal Dhal, Rishit Sarkar, Zimo Fan, Glen Chou",
+   journal = {CVPR SPAR-3D Workshop: Security, Privacy, and Adversarial Robustness in 3D Generative Vision Models},<br>   Title = "On the Adversarial Robustness of Temporal LiDAR Object Detectors",<br>   year = {2026}<br>}</pre></td>
+</tr>
 
 <tr id="Leeman25">
 	<td markdown="span"><br><img src="../images/eurips_25_01.png" onmouseover="this.src='../images/eurips_25_01.png'" onmouseout="this.src='../images/eurips_25_01.png'" />   </td>
